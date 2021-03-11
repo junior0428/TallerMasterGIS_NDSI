@@ -56,4 +56,19 @@ vect3<-rasterToPolygons(rsult_cor[[3]], dissolve = TRUE) %>% st_as_sf()
 vect4<-rasterToPolygons(rsult_cor[[4]], dissolve = TRUE) %>% st_as_sf()
 vect5<-rasterToPolygons(rsult_cor[[5]], dissolve = TRUE) %>% st_as_sf()
 vect6<-rasterToPolygons(rsult_cor[[6]], dissolve = TRUE) %>% st_as_sf()
+
+plot(vect4)
 #exportar los resultados
+
+st_write(vect1, "OUTPUT/Año1987.shp", overwrite=TRUE)
+st_write(vect2, "OUTPUT/Año1997.shp", overwrite=TRUE)
+st_write(vect3, "OUTPUT/Año2004.shp", overwrite=TRUE)
+st_write(vect4, "OUTPUT/Año2007.shp", overwrite=TRUE)
+st_write(vect5, "OUTPUT/Año2016.shp", overwrite=TRUE)
+st_write(vect6, "OUTPUT/Año2020.shp", overwrite=TRUE)
+
+writeRaster(rsult_rclas[[1]], "OUTPUT/Año1987.tif")
+
+
+
+
