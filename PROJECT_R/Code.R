@@ -12,11 +12,10 @@
 
 #visualizacion de los resultados 
 
-#reclasificacion 
+#reclasificacion del NDSI
 
 #cortar con el area de trabajo 
 
 #convertir raster a vector 
-
 
 #exportar los resultados
